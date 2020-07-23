@@ -1,0 +1,22 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/choose/choose",
+    "pages/skiJump/skiJump",
+    "pages/jumpingJack/jumpingJack",
+    "pages/squat/squat",
+    "pages/recog/recog",
+    "pages/highStep/highStep"
+    
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "数据采集",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

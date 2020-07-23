@@ -1,0 +1,11 @@
+<!--pages/home/home.wxml-->
+
+<view class="container">
+  <view class="title">请选择HIIT姿态</view>
+  <view class="item" style="margin-bottom: 15px;" bindtap="squat">深蹲</view>
+  <view class="item" style="margin-bottom: 15px;" bindtap="highStep">高抬腿</view>
+  <view class="item" style="margin-bottom: 15px;" bindtap="jumpingJack">开合跳</view>
+  <view class="item" style="margin-bottom: 15px;" bindtap="skiJump">滑雪跳</view>
+</view>
+
+

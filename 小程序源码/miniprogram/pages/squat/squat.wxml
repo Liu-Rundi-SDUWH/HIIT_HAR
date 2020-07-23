@@ -1,0 +1,28 @@
+
+<view class="title">深蹲</view>
+
+<view class="contain" >
+  <view class="sensor-item acc">
+    <view class="list">
+      <view>
+        <view>X轴数据</view>
+        <view>Y轴数据</view>
+        <view>Z轴数据</view>
+      </view>
+      <view class="value">
+        <view wx:if="{{accelerometerX}}">{{accelerometerX}}</view>
+        <view wx:if="{{accelerometerY}}">{{accelerometerY}}</view>
+        <view wx:if="{{accelerometerZ}}">{{accelerometerZ}}</view>
+      </view>
+    </view>
+    <view class="list">
+      <view class="btn" bindtap="stopAccelerometer" wx:if="{{isReading}}">暂停读取</view>
+      <view class="btn" bindtap="startAccelerometer"  wx:else>开始读取</view>
+      <view class="btn" bindtap="saveAcc">存储数据</view>
+    </view>
+    <view wx:if="{{isReading || displayValue == 10}}" style="margin-top: 20px;display: flex;justify-content: space-between;">
+      <progress percent="{{value}}" style="width:90%" />
+      <view wx:if="{{displayValue}}">{{displayValue}}s</view>
+    </view>
+  </view>
+</view>

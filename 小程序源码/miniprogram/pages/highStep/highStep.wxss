@@ -1,0 +1,41 @@
+.contain {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.sensor-item {
+  flex: 1;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.list .value {
+  border: 1px solid #eee;
+  padding: 0 30px;
+  border-radius: 10px;
+}
+
+.list .btn {
+  background: #09BB07;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.title {
+  margin: 6px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  color:rgb(18, 71, 41);
+}
+
+

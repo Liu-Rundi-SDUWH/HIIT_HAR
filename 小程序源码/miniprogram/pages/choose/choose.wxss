@@ -1,0 +1,21 @@
+
+.container {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.container .item {
+  color: #2d8cf0;
+  margin: 15px;
+  width: 50%;
+  text-align: center;
+}
+
+.title{
+  margin: 25px;
+  font-weight: 800;
+  font-size: larger;
+}
+
+
+

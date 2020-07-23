@@ -1,0 +1,32 @@
+/* pages/home/home.wxss */
+page {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  width: 100%;
+}
+
+.container .item {
+  color: #2d8cf0;
+  margin: 30px;
+  width: 50%;
+  text-align: center;
+}
+
+.sch {
+  font-size:28rpx;
+  color: darkgray;
+  position: fixed;
+  text-align: center;
+  bottom: 30rpx;
+  left: 0;
+  right: 0;
+
+}
+
+

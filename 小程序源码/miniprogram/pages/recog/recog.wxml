@@ -1,0 +1,70 @@
+
+<view class="title">姿态识别</view>
+<view wx:if="{{info}}">
+  <view class="title_one">请输入个人信息</view>
+  <input class='inputA' placeholder='请输入姓名' bindinput="inputName"></input>
+  <input class='inputA' placeholder="请输入年龄" bindinput="inputAge" />
+  <input class='inputA' placeholder="请输入身高（单位：cm, 如 168）" bindinput="inputHeight" />
+  <input class='inputA' placeholder="请输入体重（单位：kg，如 50）" bindinput="inputWeight" />
+  <input class='inputA' placeholder="请输入测试环境状态（如 平坦）" bindinput="inputEnvironment" />
+  <view class="title_two">说明：点击“开始识别”按钮后，会听到一段提示音。提示音响后开始做动作，一直做到听到语音播报，之后再进行下一个动作。</view>
+   <button class='btn_OK' bindtap="enter" type="primary">我已了解并完善信息</button>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<view wx:else class="contain" >
+  <view class="sensor-item acc">
+    <view class="list">
+      <view>
+        <view>X轴数据</view>
+        <view>Y轴数据</view>
+        <view>Z轴数据</view>
+      </view>
+      <view class="value">
+        <view wx:if="{{accelerometerX}}">{{accelerometerX}}</view>
+        <view wx:if="{{accelerometerY}}">{{accelerometerY}}</view>
+        <view wx:if="{{accelerometerZ}}">{{accelerometerZ}}</view>
+      </view>
+    </view>
+    <view class="list">
+      <view class="btn" bindtap="stopAccelerometer" wx:if="{{isReading}}">暂停</view>
+      <view class="btn" bindtap="Try_again"  wx:else>开始识别</view>
+      <view class="btn" bindtap="saveAcc">存储数据</view>
+    </view>
+    <view wx:if="{{isReading || displayValue == 20}}" style="margin-top: 20px;display: flex;justify-content: space-between;">
+
+    </view>
+  </view>
+
+  <view class="title_one" bindtap="show" style="margin-top:9px">识别结果</view>
+  <view class="flex-row" >
+    <view>深蹲 {{count_num.squat}}</view>
+    <view>开合跳 {{count_num.jumpingJack}}</view>
+    <view>高抬腿 {{count_num.highStep}}</view>
+    <view>滑雪跳 {{count_num.skiJump}}</view>
+  </view>
+  <view class="title_two">说明：点击“开始识别”按钮后，会听到一段提示音。提示音响后开始做动作，一直做到听到语音播报，之后再进行下一个动作。</view>
+  <view class="title_three">【动作要领】</view>
+  <view class="title_three">深蹲：双臂平举，两手掌心相对</view>
+  <view class="title_three">开合跳：双臂在体侧画弧线，掌心朝前</view>
+  <view class="title_three">高抬腿：双臂在体侧前后摆动，类似原地跑步</view>
+  <view class="title_three">滑雪跳：双臂在体侧随步伐前后摆动，向前的手掌摆至与下颚齐平</view>
+
+  
+</view>

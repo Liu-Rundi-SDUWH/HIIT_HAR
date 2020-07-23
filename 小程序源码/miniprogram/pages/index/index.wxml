@@ -1,0 +1,15 @@
+<!--pages/home/home.wxml-->
+<view class="container">
+  <view class="item" bindtap="_BLE">
+    姿态识别
+  </view>
+  <view class="item" style="margin-bottom: 60px;" bindtap="_ACC">
+    姿态数据采集
+  </view>
+  <view class="sch">
+    <view>山东大学（威海）数据科学与人工智能实验班</view>
+    <view>开发者：小胖迪</view>
+  </view>
+  
+</view>
+
